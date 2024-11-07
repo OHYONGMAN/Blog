@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import MainImage from "@/components/home-page/main-image";
 import AllPosts from "../components/home-page/all-posts";
 import Pagination from "@/components/posts/pagination";
@@ -53,14 +53,16 @@ export default function Home() {
 
   return (
     <>
-      <MainImage />
-      <AllPosts posts={currentPosts} />
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={filteredPosts.length}
-        paginate={paginate}
-        currentPage={currentPage}
-      />
+      <Suspense fallback={<div>Loading...</div>}>
+        <MainImage />
+        <AllPosts posts={currentPosts} />
+        <Pagination
+          postsPerPage={postsPerPage}
+          totalPosts={filteredPosts.length}
+          paginate={paginate}
+          currentPage={currentPage}
+        />
+      </Suspense>
     </>
   );
 }
