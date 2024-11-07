@@ -1,16 +1,15 @@
-"use client";
+import PostDetail from "./post-detail";
 
-import { useEffect } from "react";
-import PostContent from "@/components/posts/post-detail/post-content";
-import usePostStore from '@/store/posts-store';
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  return {
+    title: slug,
+    description: "블로그 포스트 상세 페이지",
+  };
+}
 
 export default function PostDetailPage({ params }) {
   const { slug } = params;
-  const { currentPost, fetchPostData } = usePostStore();
 
-  useEffect(() => {
-    fetchPostData(slug);
-  }, [slug, fetchPostData]);
-
-  return currentPost ? <PostContent post={currentPost} /> : <p>불러오는 중...</p>;
+  return <PostDetail slug={slug} />;
 }
