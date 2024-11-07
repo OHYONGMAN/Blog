@@ -24,6 +24,7 @@ const Header = styled.header`
     object-fit: cover;
     width: 200px;
     height: 120px;
+    border-radius: 8px;
   }
 
   @media (min-width: 768px) {

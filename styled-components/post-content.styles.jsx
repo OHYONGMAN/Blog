@@ -8,12 +8,12 @@ const Content = styled.div`
   margin: var(--size-8) auto;
   font-size: var(--size-5);
   line-height: var(--size-8);
-  background-color: var(--color-beige); /* 밝은 회색 배경 */
-  border-radius: 6px;
+  background-color: var(--color-beige);
+  border-radius: 8px;
   padding: var(--size-4);
 
   p {
-    color: var(--color-navy); /* 텍스트 색상 */
+    color: var(--color-navy);
   }
 
   .image {
