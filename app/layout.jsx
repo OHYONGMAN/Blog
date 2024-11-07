@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import MainNavigation from "@/components/main-header/main-navigation";
 import GlobalStyles from "@/styled-components/global.styles";
 import { Suspense } from "react";
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
           <GlobalStyles />
           <MainNavigation />
           {children}
+          <Footer />
         </Suspense>
       </body>
     </html>
