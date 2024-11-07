@@ -5,6 +5,7 @@ import {
   ContentWrap,
 } from "@/styled-components/post-item.styles";
 import Image from "next/image";
+import mainImage from "../../public/images/main-image.png";
 
 export default function PostItem(props) {
   const { title, image, excerpt, date, slug } = props.post;
@@ -15,20 +16,30 @@ export default function PostItem(props) {
     year: "numeric",
   });
 
-  const imagePath = `/images/posts/${slug}/${image}`;
+  const imagePath = image ? `/images/posts/${slug}/${image}` : null;
   const linkPath = `/posts/${slug}`;
 
   return (
     <Post>
       <NavLink href={linkPath}>
         <ImageWrap>
-          <Image
-            src={imagePath}
-            alt={title}
-            width={300}
-            height={200}
-            layout="responsive"
-          />
+          {imagePath ? (
+            <Image
+              src={imagePath}
+              alt={title}
+              width={300}
+              height={200}
+              layout="responsive"
+            />
+          ) : (
+            <Image
+              src={mainImage}
+              alt="기본 이미지입니다."
+              width={300}
+              height={200}
+              layout="responsive"
+            />
+          )}
         </ImageWrap>
         <ContentWrap>
           <h3>{title}</h3>

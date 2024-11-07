@@ -8,7 +8,7 @@ import { useMemo } from "react";
 
 export default function PostContent({ post }) {
   const imagePath = useMemo(
-    () => `/images/posts/${post.slug}/${post.image}`,
+    () => (post.image ? `/images/posts/${post.slug}/${post.image}` : ""),
     [post.slug, post.image]
   );
 
@@ -19,7 +19,7 @@ export default function PostContent({ post }) {
         return (
           <div className="image">
             <Image
-              src={`/images/posts/${post.slug}/${image.src}`}
+              src={image.src ? `/images/posts/${post.slug}/${image.src}` : ""}
               alt={image.alt || ""}
               width={600}
               height={300}
