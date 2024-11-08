@@ -17,6 +17,9 @@ export const NavLink = styled(Link)`
 `;
 
 export const ImageWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 200px;
   overflow: hidden;
@@ -26,7 +29,7 @@ export const ImageWrap = styled.div`
   img {
     /* width: 100%; */
     /* height: 100%; */
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 `;
 

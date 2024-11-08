@@ -28,9 +28,9 @@ export default function PostItem(props) {
           <Image
             src={imagePath || mainImage}
             alt={imagePath ? title : "기본 이미지입니다."}
-            width={200}
-            height={200}
-            style={{ objectFit: "cover" }}
+            width={150}
+            height={150}
+            layout="intrinsic"
           />
         </ImageWrap>
         <ContentWrap>
