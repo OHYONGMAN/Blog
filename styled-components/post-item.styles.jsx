@@ -21,7 +21,7 @@ export const ImageWrap = styled.div`
   height: 200px;
   overflow: hidden;
   background-color: ${({ defaultImage }) =>
-    defaultImage ? "transparent" : "var(--color-beige)"};
+    defaultImage ? "transparent" : "var(--color-white)"};
 
   img {
     /* width: 100%; */
