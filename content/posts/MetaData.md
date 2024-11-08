@@ -1,7 +1,8 @@
 ---
+image: NEXTJS.svg
 title: 메타데이터
-excerpt: 동적 메타데이터와 정적 메타데이터
 date: "2024-11-07"
+excerpt: 동적 메타데이터와 정적 메타데이터
 ---
 
 # 1. 메타데이터란?

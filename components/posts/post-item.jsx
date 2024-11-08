@@ -1,11 +1,13 @@
+"use client";
+
+import Image from "next/image";
+import mainImage from "../../public/images/main-image.png";
 import {
   Post,
   NavLink,
   ImageWrap,
   ContentWrap,
 } from "@/styled-components/post-item.styles";
-import Image from "next/image";
-import mainImage from "../../public/images/main-image.png";
 
 export default function PostItem(props) {
   const { title, image, excerpt, date, slug } = props.post;
@@ -22,24 +24,14 @@ export default function PostItem(props) {
   return (
     <Post>
       <NavLink href={linkPath}>
-        <ImageWrap>
-          {imagePath ? (
-            <Image
-              src={imagePath}
-              alt={title}
-              width={300}
-              height={200}
-              layout="responsive"
-            />
-          ) : (
-            <Image
-              src={mainImage}
-              alt="기본 이미지입니다."
-              width={300}
-              height={200}
-              layout="responsive"
-            />
-          )}
+        <ImageWrap defaultImage={!imagePath}>
+          <Image
+            src={imagePath || mainImage}
+            alt={imagePath ? title : "기본 이미지입니다."}
+            width={200}
+            height={200}
+            style={{ objectFit: "cover" }}
+          />
         </ImageWrap>
         <ContentWrap>
           <h3>{title}</h3>

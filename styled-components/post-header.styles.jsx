@@ -20,8 +20,6 @@ const Header = styled.header`
     text-align: center;
   }
 
-
-
   img {
     object-fit: cover;
     width: 200px;

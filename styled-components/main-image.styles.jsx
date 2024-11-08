@@ -1,17 +1,16 @@
-// styled-components 파일 (hero.styles.js)
 "use client";
 
 import styled from "styled-components";
 
-const HeroWrap = styled.section`
+const MainWrap = styled.section`
   width: 100%;
   background-color: var(--color-navy);
 `;
 
-const ImageWrapper = styled.div`
+const ImageWrap = styled.div`
   position: relative;
   display: flex;
-  justify-content: center; // 수평 가운데 정렬
+  justify-content: center;
   /* align-items: center; // 수직 가운데 정렬 */
   width: 100%;
   height: 500px;
@@ -19,4 +18,4 @@ const ImageWrapper = styled.div`
   margin: auto;
 `;
 
-export { HeroWrap, ImageWrapper };
+export { MainWrap, ImageWrap };
