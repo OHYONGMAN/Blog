@@ -11,6 +11,7 @@ const Content = styled.div`
   background-color: var(--color-beige);
   border-radius: 8px;
   padding: var(--size-4);
+  color: var(--color-navy);
 
   p {
     color: var(--color-navy);

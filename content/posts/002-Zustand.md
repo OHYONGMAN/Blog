@@ -2,7 +2,7 @@
 image: zustand.png
 title: Zustand
 date: "2024-11-08"
-excerpt: Zustand 개념 정리
+excerpt: Zustand 기초
 ---
 
 # 1. Zustand란?
