@@ -1,7 +1,7 @@
 ---
 image: zustand.png
 title: Zustand
-date: "2024-11-10"
+date: "2024-11-09"
 excerpt: Zustand 심화
 ---
 

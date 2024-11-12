@@ -24,6 +24,8 @@ function getPostData(postIdentifier) {
 
 export async function GET() {
   const postFiles = getPostsFiles();
-  const allPosts = postFiles.map((postFile) => getPostData(postFile));
+  const allPosts = postFiles
+    .map((postFile) => getPostData(postFile))
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
   return NextResponse.json(allPosts);
 }

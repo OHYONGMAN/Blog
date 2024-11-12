@@ -1,7 +1,7 @@
 ---
 image: nextjs.png
 title: CORS 에러
-date: "2024-11-11"
+date: "2024-11-10"
 excerpt: CORS 에러 기초
 ---
 
