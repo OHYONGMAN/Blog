@@ -1,4 +1,4 @@
-![메인페이지](//readme/image.png)
+![메인페이지](/public/readme/image.png)
 
 # 프로젝트 소개
 
@@ -8,6 +8,10 @@
 # 개발 환경
 
 - Nextjs, JavaScript, Zustand, styled-components, vercel
+
+# 개발 기간
+- 2024-11-01 ~ 2024-11-07
+
 
 # 파일 구조
 
@@ -65,4 +69,15 @@
 - Zustand를 이용한 상태 관리: 상태 관리를 위해 가벼운 상태 관리 라이브러리인 Zustand를 사용하여 전역 상태를 관리합니다.
 - 직관적인 UI/UX: 사용자 친화적인 UI로 누구나 쉽게 사용할 수 있습니다.
 
+## 게시물
+![게시물](public/readme/posts.png)
+  - md 파일을 작성하면 날짜 순으로 정렬하여 게시물을 6개까지 표시합니다.
+
+## 페이지네이션
+![페이지네이션](public/readme/pagination.png)
+  - 게시물이 6개가 넘을 경우 페이지네이션 버튼을 통해 다음 페이지로 이동 가능합니다.
+
+## 검색기능
+![검색기능](public/readme/search.png)
+  - 블로그 글과 일치하는 게시물을 필터링하여 보여줍니다.
 
