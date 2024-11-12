@@ -1,5 +1,8 @@
 ![메인페이지](/public/readme/image.png)
 
+- 배포 URL: https://yongminoh-blog.vercel.app/
+
+
 # 프로젝트 소개
 
 이 블로그는 Next.js를 기반으로 구축되어, 최신 웹 기술과 빠른 페이지 로드를 지원합니다.
